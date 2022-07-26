@@ -1,0 +1,448 @@
+/* Variabes */
+:root {
+    --border-color: #5e6576;
+    --text-color: #222222;
+    --text-dark: #111111;
+    --primary: #ff679a;
+    --white: #ffffff;
+    --gray-bg: #f0f0f0;
+}
+
+html {
+    width: calc(100%);
+    height: 100%;
+    /* background: var(--background); */
+}
+
+a {
+    cursor: pointer;
+}
+
+*,
+*:focus {
+    outline: none
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+} */
+
+body,
+p {
+    color: var(--border-color);
+    font: 400 14px/1.625rem Poppins, "Poppins", sans-serif;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+.header-bg {
+    background-image: url('../images/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 90vh;
+}
+
+.header-bg .header-text-wraper {
+    text-align: center;
+}
+
+.header-bg .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.header-bg .header-text-wraper .header-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.header-bg .header-text-wraper .header-description {
+    margin-top: 1.5rem;
+    font-size: 27px;
+    line-height: 30px;
+    /* font-weight: 600; */
+    color: var(--white);
+
+}
+
+.header-bg .side-image-bg {
+    width: -webkit-fill-available;
+    max-width: 90%;
+    float: right;
+    height: 100%;
+    max-height: 710px;
+}
+#atlanticlight {
+    position: relative;
+    max-width: 87%;
+    width: -webkit-fill-available;
+    margin: 0;
+  }
+  #atlanticlight video,
+  #atlanticlight button {
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+  
+  #atlanticlight video,
+  #atlanticlight button {
+    position: absolute;
+    top: 0;
+  }
+  
+  #atlanticlight button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+#atlanticlight button svg {
+    fill: #fff;
+    transition: .6s opacity;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80%;
+    border: 5px solid var(--white);
+    width: 70px;
+    padding: 15px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+  
+  #playpause {
+    display: none;
+  }
+  
+  .playing {
+    opacity: 0;
+  }
+
+.navbar-logo {
+    width: 220px;
+    /* max-height: 80px; */
+    padding: 2.5rem 0rem 1rem 2.5rem;
+}
+
+.v-subscribe-wrap {
+    display: flex;
+    max-width: 500px;
+    margin-top: 2rem;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1.2px solid white;
+    background-color: transparent;
+}
+
+.subscribe-title {
+    margin-top: 4rem;
+    font-size: 22px;
+    color: var(--white);
+}
+
+.v-subscribe-wrap input {
+    flex: 1;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+.v-subscribe-wrap label {
+    position: absolute;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0px 10px 0px 7px;
+    margin-left: 20px;
+    margin-top: -14px;
+}
+
+.v-subscribe-wrap button {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    margin-right: -4px;
+
+}
+
+.v-subscribe-wrap button span {
+    padding: 14px 22px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary);
+    background-color: var(--white);
+    border-radius: 0px;
+}
+
+.chat-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.chat-title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.chat-section .chat-image {
+    max-height: 650px;
+    object-fit: cover;
+    max-width: -webkit-fill-available;
+}
+
+.chat-image-text-wraper {
+    text-align: center;
+    padding: 2rem;
+}
+
+.chat-image-text-wraper .title {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.chat-image-text-wraper .description {
+    font-size: 18px;
+    color: var(--text-dark);
+    line-height: 21px;
+    margin-top: 10px;
+}
+
+.v-special {
+    background-color: var(--gray-bg);
+}
+
+.v-special .title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.v-special .special-image {
+    max-height: 100px;
+}
+
+.v-special .special-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.v-special .special-description {
+    font-size: 17px;
+    color: var(--text-dark);
+    line-height: 22px;
+}
+
+.v-places {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.v-places .soon-places {
+    font-size: 35px;
+    padding-bottom: 4rem;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.v-places .place-image {
+    max-height: 125px;
+}
+
+.v-places .place-image2 {
+    max-height: 130px;
+}
+
+.v-places .place-title {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.v-places .place-date {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.v-places .available-place {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.request-submit {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.request-submit input {
+    height: 50px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.vbtn {
+    height: 50px;
+    padding: 0rem 0.7rem;
+    box-shadow: none;
+}
+
+.vbtn.vprimary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-size: 20px;
+
+}
+
+.footer-bg {
+    background-image: url('../images/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.footer-bg .terms {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+.footer-bg .social-icon {
+    max-width: 35px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES RESPONSIVE CSS */
+/* MAX-WIDTH 576PX */
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 150px;
+        padding: 1.5rem 0rem 3rem;
+    }
+
+    .header-bg .header-text-wraper .header-title {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .header-bg .header-text-wraper .header-description {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .chat-image-text-wraper {
+        padding: 2rem 1rem;
+    }
+
+    .v-special .title {
+        font-size: 30px;
+    }
+
+    .chat-title {
+        font-size: 30px;
+    }
+
+    .v-places .soon-places {
+        font-size: 30px;
+    }
+}
+
+/* MAX-WIDTH 456PX */
+@media (max-width: 456px) {
+    .header-bg .header-text-wraper .header-title {
+        margin-top: 1rem;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .header-bg .header-text-wraper .header-description {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .chat-title {
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+
+    .chat-image-text-wraper {
+        padding: 1rem;
+    }
+
+    .v-special .title {
+        font-size: 21px;
+        line-height: 40px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .v-places .soon-places {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
