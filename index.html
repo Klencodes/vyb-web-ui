@@ -152,7 +152,7 @@
         </div>
     </div>
 
-    <!-- Infomation Section -->
+    <!-- Coming soon Section -->
     <div class="container">
         <div class="row v-places">
             <div class="col-md-5 align-self-center">
@@ -161,14 +161,14 @@
             <div class="col-md-4 align-self-center">
                 <div class="">
                     <img src="./images/place-1.png" class="place-image" data-toggle="tooltip" data-placement="top"
-                        title="Tooltip on top">
+                        title="San Francisco - Oct. 14th">
                     <p class="place-title mb-0">San Francisco</p>
                     <p class="place-date">Oct. 14th</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="">
-                    <img src="./images/place-2.png" class="place-image2">
+                    <img src="./images/place-2.png" class="place-image2" data-toggle="tooltip", data-placement="top" title="New York City - Nov. 14th">
                     <p class="place-title mb-0">New York City</p>
                     <p class="place-date">Nov. 14th</p>
                 </div>
@@ -191,12 +191,13 @@
     <footer class="footer-bg">
         <div class="container">
             <div class="d-flex justify-content-between">
-                <div>
-                    <p class="terms">Privacy policy</p>
-                    <p class="terms">Our terms of servic</p>
+                <div class="d-grid">
+                    <a class="terms mb-4">Privacy policy</a>
+                    <a class="terms">Our terms of servic</a>
                 </div>
-                <div class="d-block-inline">
-                    <a></a>
+                <div class="d-block-inline align-self-center">
+                    <a><img src="images/insta.png" class="social-icon"></a>
+                    <a><img src="images/tiktok.png" class="social-icon"></a>
                 </div>
 
             </div>
@@ -229,6 +230,7 @@
 
         }, false);
     </script>
+
     <script>
         const form = document.getElementById('subscribe');
         form.addEventListener('submit', function (e) {
