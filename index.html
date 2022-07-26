@@ -63,7 +63,7 @@
                 <div class="col-12 col-sm-5 col-xl-4 text-center ">
                     <div>
                         <img src="images/header-mobile-empty.png" class="side-image-bg">
-                        <div id="atlanticlight">
+                        <div id="vybvideo">
                             <video controls>
                                 <!-- <source src="http://thenewcode.com/assets/videos/atlantic-light.webm"> -->
                                 <source src="video/a.mp4">
@@ -206,23 +206,23 @@
 
     <!-- Scripts -->
     <script>
-        var atlanticlight = document.querySelector("#atlanticlight video"),
+        var vybvideo = document.querySelector("#vybvideo video"),
             playpause = document.getElementById("playpause"),
             lefttoplay = document.getElementById("lefttoplay"),
             righttoplay = document.getElementById("righttoplay"),
             lefttopause = document.getElementById("lefttopause"),
             righttopause = document.getElementById("righttopause");
-        atlanticlight.removeAttribute("controls");
+        vybvideo.removeAttribute("controls");
         playpause.style.display = "block";
         playpause.addEventListener('click', function () {
-            if (atlanticlight.paused) {
-                atlanticlight.play();
+            if (vybvideo.paused) {
+                vybvideo.play();
                 playpause.classList.add("playing");
                 lefttopause.beginElement();
                 righttopause.beginElement();
 
             } else {
-                atlanticlight.pause();
+                vybvideo.pause();
                 lefttoplay.beginElement();
                 righttoplay.beginElement();
                 playpause.classList.remove("playing");

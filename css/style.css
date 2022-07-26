@@ -91,26 +91,26 @@ p {
     height: 100%;
     max-height: 710px;
 }
-#atlanticlight {
+#vybvideo {
     position: relative;
     width: 100%;
     width: -webkit-fill-available;
     margin: 0;
   }
-  #atlanticlight video,
-  #atlanticlight button {
+  #vybvideo video,
+  #vybvideo button {
     width: -webkit-fill-available;
     height: auto;
 }
 
   
-  #atlanticlight video,
-  #atlanticlight button {
+  #vybvideo video,
+  #vybvideo button {
     position: absolute;
     top: 0;
   }
   
-  #atlanticlight button {
+  #vybvideo button {
     background: transparent;
     outline: none;
     border: none;
@@ -118,7 +118,7 @@ p {
     height: 100%;
 }
 
-#atlanticlight button svg {
+#vybvideo button svg {
     fill: #fff;
     transition: .6s opacity;
     position: relative;
