@@ -433,7 +433,11 @@ p {
     .chat-image-text-wraper {
         padding: 1rem;
     }
-
+    .header-bg .side-image-bg {
+        margin-top: 1.5rem;
+        text-align: end;
+        float: none;
+    }
     .v-special .title {
         font-size: 21px;
         line-height: 40px;
@@ -445,5 +449,8 @@ p {
         font-size: 25px;
         font-weight: 600;
         line-height: 40px;
+    }
+    .v-places .available-place {
+        font-size: 17px;
     }
 }
